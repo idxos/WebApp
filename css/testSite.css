@@ -1,0 +1,83 @@
+﻿.testing-top-nav-wrapper {
+    width: 100%;
+    position: absolute; 
+    top: 50px;
+    left: 0;
+    min-height: 45px;
+    background: #222;
+}
+
+.testing-top-nav {
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    text-align:right;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.testing-top-nav > li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+}
+
+.testing-top-nav > li:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.testing-top-nav > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+.k-grid-content table tbody tr:nth-child(even) {
+    background-color: #C2EAFF;
+}
+.k-grid-content table tbody tr:hover {
+    background-color: #8AB8E6;
+}
+
+.k-grid-toolbar {
+    height: 50px;
+}
+
+.k-grid-toolbar .toolbarSearch {
+    float: right;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    border: none;
+    height: 23px;
+    position: relative;
+}
+
+.toolbarSearch input {
+    position: absolute;
+    top: 50%;
+    height: 25px;
+    right: 10px;
+    text-align:center;
+    border-radius:5px;
+    border: none;
+}
+
+.gridAdd {
+    position: absolute;
+    line-height: 50px;
+    left: 10px;
+    color:white;
+    font-weight:bold;
+    font-size: 1.25em;
+}
+.gridAdd:hover {
+    cursor: pointer;
+}
+
+.k-link {
+    font-weight: bold;
+}

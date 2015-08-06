@@ -1,0 +1,140 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="row register-hero">
+            <section class="col-lg-3">
+                <img src="images/laptop-round.png" class="img-responsive">
+            </section>
+            <section class="col-lg-9">
+                <h1>Sign Up to Start</h1>
+                <p class="welcome-summary">
+                    Welcom to Resource and Inventory Management tool (RiM),
+                    the easiest way to get familiar with the new system, and a single 
+                    point for all resources.
+                </p>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-lg-11 em-left-55">
+
+                <form class="registration-form" ng-submit="register()">
+                <div class="timeline-centered">
+
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon bg-white">
+                                1.
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Account</h2>
+                                <div class="skinny-me">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg typeface-font" placeholder="Name@wellsfargo.com" ng-model="userDetail.LoginId">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg typeface-font" placeholder="At least 8 characters" ng-model="userDetail.Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon bg-white">
+                                2.
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Profile</h2>
+                                <div class="skinny-me">
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-lg typeface-font" placeholder="Ad-Ent Login Id" ng-model="userDetail.AdEntId">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-lg typeface-font" placeholder="First Name" ng-model="userDetail.FirstName">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-lg typeface-font" placeholder="Last Name" ng-model="userDetail.LastName">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-lg typeface-font" placeholder="+1 Phone Number" ng-model="userDetail.Phone">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-lg typeface-font" placeholder="Team Name" ng-model="userDetail.Group">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-lg typeface-font" placeholder="Experiance In" ng-model="userDetail.Comments">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <button class="btn btn-block btn-lg btn-primary" ng-click="register()">Create Account</button>
+                                            </div>
+                                            <span class="help-block text-center">
+                                                Please fill out all required(*) fields.
+                                            </span>
+                                            <br/>
+                                            <span class="help-block text-center">
+                                                By Clicking "Create Account" you agree to Wells Fargo
+                                                <a href="#/terms">Terms & Conditions</a>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="timeline-icon bg-white"><i class="fa fa-check"></i>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                </div><!-- timeline -->
+            </section><!-- col -->
+            <section class="col-lg-1"></section>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group margin-top-5" ng-show="showErrorMessage">
+                    <li class="list-group-item list-group-item-danger" ng-repeat="message in errorMessages">
+                        {{message}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

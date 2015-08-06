@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Charts</title>
+  <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/rainbow/themes/github.css">
+  <link href="bower_components/angular-chart.js/examples/bootstrap.css" rel="stylesheet">
+  <link href="bower_components/angular-chart.js/examples/app.css" rel="stylesheet">
+
+  <style>
+    #canvas-holder{
+      width:30%;
+    }
+  </style>
+</head>
+<body ng-app="examples" id="top">
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" ng-controller="MenuCtrl">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand visible-xs" href="#">Angular Charts</a>
+      </div>
+      <nav class="hidden-xs">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#top" role="button" class="navbar-brand">
+              RiM
+            </a>
+          </li>
+          <li class="dropdown">
+            <a role="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Directives <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="chart in charts"><a ng-href="#{{chart | lowercase }}-chart">{{chart}}</a></li>
+            </ul>
+          </li>
+          <li><a href="#getting_started">Getting started</a></li>
+          <li><a href="#reactive">Reactive</a></li>
+        </ul>
+      </nav>
+      <nav class="collapse" collapse="isCollapsed" style="height: 0px;">
+        <ul class="nav navbar-nav">
+          <li><a href="#getting_started" ng-click="isCollapsed = !isCollapsed">Getting started</a></li>
+          <li><a href="#directives" ng-click="isCollapsed = !isCollapsed">Directives</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+<div class="container-fluid">
+
+
+<div class="container">
+
+
+
+
+  <div id="canvas-holder">
+    <canvas id="chart-area" width="500" height="500"/>
+  </div>
+  <script>
+    var doughnutData = [
+        {
+          value: 1,
+          label: "One"
+        },
+        {
+          value: 2,
+          label: "Two"
+        },
+        {
+          value: 3,
+          label: "Three"
+        },
+        {
+          value: 4,
+          label: "Four"
+        },
+        {
+          value: 5,
+          label: "Five"
+        }
+
+      ];
+
+      window.onload = function(){
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+      };
+  </script>
+
+
+    <section id="doughnut-charts">
+      <div class="row">
+        <div class="col-lg-3 col-sm-3" id="doughnut-chart" ng-controller="DoughnutCtrl">
+          <canvas id="doughnut-chart" class="chart chart-doughnut chart-xs" data="data" labels="labels" legend="false"></canvas>
+        </div>
+
+        <div class="col-lg-3 col-sm-3" id="doughnut-processes-chart" ng-controller="DoughnutProcessesCtrl">
+          <canvas id="doughnut-processes-chart" class="chart chart-doughnut chart-xs" data="data" labels="labels" legend="false"></canvas>
+        </div>
+
+        <div class="col-lg-3 col-sm-3" id="doughnut-licenses-chart" ng-controller="DoughnutLicensesCtrl">
+          <canvas id="doughnut-licenses-chart" class="chart chart-doughnut chart-xs" data="data" labels="labels" legend="false"></canvas>
+       </div>
+      </div>  
+    </section>
+
+
+
+    <section id="reactive">
+      <div class="page-header">
+        <h1>Reactive</h1>
+        <p>All charts are reactive and will update automatically when data changes.</p>
+      </div>
+      <div class="row" ng-controller="DataTablesCtrl">
+        <div class="col-lg-6 col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Chart Data</div>
+            <div class="panel-body">
+              <table class="table table-responsive table-condensed table-striped">
+                <tr>
+                  <th ng-repeat="label in labels">{{label}}</th>
+                </tr>
+                <tr ng-repeat="dataSet in data">
+                  <td ng-repeat="set in dataSet track by $index"><span style="text-align: right;">{{data[$parent.$index][$index]}}</span></td>
+                </tr>
+              </table>
+              <button type="button" class="btn btn-primary pull-right" ng-click="randomize()">Randomize</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Reactive Chart</div>
+            <div class="panel-body">
+              <canvas id="tables" class="chart chart-line" data="data" labels="labels" colours="colours"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section id="directives">
+      <div class="page-header">
+        <h1>Directives</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12" id="line-chart" ng-controller="LineCtrl">
+          <div class="panel panel-default">
+            <div class="panel-heading">Line Chart</div>
+            <div class="panel-body">
+              <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" click="onClick" hover="onHover" series="series"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </div>
+</div>
+
+  <footer class="footer">
+
+      <div class="text-center aspect-ratio" id="container" ng-controller="TicksCtrl">
+        <canvas width='1200' height='300' id="hero-bar" class="chart chart-line chart-xl" data="data" options="options" labels="labels"></canvas>
+        <div class="header">
+          <h1>
+            MiP
+          </h1>
+
+          <p>Custom Inventory Management Systems for Champions.</p>
+
+          <p>
+            <a class="btn btn-default btn-lg" href="https://github.com/jtblin/angular-chart"><i class="icon-github"></i>Code on Github</a>
+            <a class="btn btn-success btn-lg" href="../dist/angular-chart.js.tar.gz" download="angular-chart.js.tar.gz">
+              <i class="fa fa-download"></i> Download <small>(<!-- version -->)</small>
+            </a>
+          </p>
+        </div>
+      </div>
+      <p>Wells Fargo 2015</p>
+    </div>
+  </footer>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/Chart.js/Chart.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/rainbow/js/rainbow.min.js"></script>
+  <script src="bower_components/rainbow/js/language/generic.js"></script>
+  <script src="bower_components/rainbow/js/language/html.js"></script>
+  <script src="bower_components/rainbow/js/language/javascript.js"></script>
+  <script src="bower_components/angular-chart.js/angular-chart.js"></script>
+
+  <script src="bower_components/angular-chart.js/examples/smoothscroll.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    var doughnutData = [
+      {
+        value: 300,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+      },
+      {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+      },
+      {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+      },
+      {
+        value: 40,
+        color: "#949FB1",
+        highlight: "#A8B3C5",
+        label: "Grey"
+      },
+      {
+        value: 120,
+        color: "#4D5360",
+        highlight: "#616774",
+        label: "Dark Grey"
+      }
+
+    ];
+
+    window.onload = function(){
+      var ctx = document.getElementById("chart-area").getContext("2d");
+      window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+    };
+  </script>
+
+
+</body>
+</html>

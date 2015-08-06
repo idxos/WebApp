@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+ <head>
+  <meta charset="utf-8">
+  <title>RiM</title>
+
+  <!-- CSS Stylesheet-->
+  <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/kendo/kendo.common-bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/kendo/kendo.bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/kendo/kendo.dataviz.min.css" rel="stylesheet"/>
+  <link href="css/kendo/kendo.dataviz.bootstrap.min.css" rel="stylesheet"/>
+
+  <link href="css/toastr.min.css" rel="stylesheet">
+  <link href="css/ng/nprogress.css" rel="stylesheet">
+  <link href="css/ng/ngDialog.css" rel="stylesheet"/>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.3.7/css/ngDialog-theme-default.min.css" rel="stylesheet"/>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.3.7/css/ngDialog-theme-plain.min.css" rel="stylesheet"/>
+  
+
+  <link href="css/rimsite.css" rel="stylesheet">
+  <link href="css/ng/ngDialog-theme-report-chart.min.css" rel="stylesheet"/>
+
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/site.css">
+
+  <style>
+    .signin-page-wrapper {
+      margin-bottom: 0!important;
+      padding-bottom: 0!important;
+      background-color: #000;
+    }
+
+    nav.footer-nav {
+      margin-top: )!important;
+      padding-top: 0!important;
+      padding-bottom: 25px;
+      background-color: #000;
+      color: #fff;
+    }
+
+
+
+  </style>
+
+  <!-- Angular Core Libs -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+      window.jQuery || document.write('<script src="js/libs/jquery/jquery-1.11.1.min.js">\x3C/script>')
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-sanitize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-cookies.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.4.0/js/ngDialog.js"></script>
+  <script>
+    if (!window.angular) {
+      document.write('<script src="js/libs/angular-1.4.1/angular.min.js">\x3C/script>');
+      document.write('<script src="js/libs/angular-1.4.1/angular-route.min.js">\x3C/script>');
+      document.write('<script src="js/libs/angular-1.4.1/angular-resource.min.js">\x3C/script>');
+      document.write('<script src="js/libs/angular-1.4.1/angular-sanitize.min.js">\x3C/script>');
+      document.write('<script src="js/libs/angular-1.4.1/angular-cookies.min.js">\x3C/script>');
+      document.write('<script src="js/libs/angular-1.4.1/angular-animate.min.js">\x3C/script>');
+    }
+  </script>
+
+  <!-- Vendor UI Libraries -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+  <script>$().modal || document.write('<script src="js/libs/bootstrap/bootstrap.min.js">\x3C/script>')</script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js" type="text/javascript"></script>
+  <script>window.toastr || document.write('<script src="js/libs/toastr/toastr.min.js">\x3C/script>')</script>
+  <script src="js/libs/kendo/kendo.all.min.js" type="text/javascript"></script>
+
+  <!-- Local Javascript-->
+  <script src="js/libs/ng/ng-breadcrumbs.js" type="text/javascript"></script>
+  <script src="js/libs/ng/nprogress.js" type="text/javascript"></script>
+
+  <!-- App -->
+  <script src="js/app.js"></script>
+
+
+  <script src="js/controllers/productControllers.js"></script>
+  <script src="js/controllers/animations.js"></script>
+  <script src="js/controllers/AuthCtrl.js"></script>
+  <script src="js/controllers/DashboardCtrl.js"></script>
+  <script src="js/controllers/EquipmentCtrl.js"></script>
+  <script src="js/controllers/MembersCtrl.js"></script>
+
+ </head>
+ <body class="">
+  
+  <div class="bg-black" ng-include="'views/global_embeds/top-nav.html'"></div>
+
+  <div class="view-container">  
+    <div ng-view class="view-frame"></div>
+  </div><!--view-container-->
+
+
+ </body>
+</html>

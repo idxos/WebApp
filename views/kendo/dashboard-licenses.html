@@ -1,0 +1,303 @@
+<div id="example">
+    <div id="grid" data-role="grid" class="k-grid k-widget" style="height: 550px;">
+        
+        <div class="k-header k-grid-toolbar">
+            <a class="btn btn-link k-button k-grid-add size-15" href="#">
+                <span class="ion-plus size-15"></span>&nbsp; Add New Product/License
+            </a>
+        </div>
+        
+        <div class="k-grid-header" style="padding-right: 0px;">
+            <div class="k-grid-header-wrap">
+                <table role="grid">
+                    <colgroup>
+                        <col>
+                            <col style="width:120px">
+                                <col style="width:120px">
+                                    <col style="width:120px">
+                                        <col style="width:250px">
+                    </colgroup>
+                    <thead role="rowgroup">
+                        <tr role="row">
+                            <th role="columnheader" data-field="ProductName" rowspan="1" 
+                                data-title="Product Name" data-index="0" id="e6b1258b-c404-464c-9c39-22261d8bcb96" class="k-header">Name</th>
+                            <th role="columnheader" data-field="UnitPrice" rowspan="1" 
+                                data-title="Unit Price" data-index="1" id="342d8a79-3ccd-4d0e-813f-cea18669ce9b" class="k-header">Total Licences</th>
+                            <th role="columnheader" data-field="UnitsInStock" rowspan="1" 
+                                data-title="Units In Stock" data-index="2" id="08569fad-3ee5-4dde-9af9-c07ee1386a7b" class="k-header">Total Used</th>
+                            <th role="columnheader" data-field="Discontinued" rowspan="1" 
+                                data-index="3" id="78c2b5e3-3cdb-46ab-946c-99658eb7830d" class="k-header">Attachment</th>
+                            <th id="3b6f7bfd-73b0-4cde-a01e-f08c9036619a" rowspan="1" 
+                                data-index="4" class="k-header">&nbsp;</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="k-grid-content" style="height: 457px;">
+            <table role="grid" style="height: auto;">
+                <colgroup>
+                    <col>
+                        <col style="width:120px">
+                            <col style="width:120px">
+                                <col style="width:120px">
+                                    <col style="width:250px">
+                </colgroup>
+                <tbody role="rowgroup">
+
+
+                    <tr data-uid="1e4f6f1b-e528-4f67-b73a-bcd528db8cf4" role="row">
+                        <td role="gridcell">Parallels</td>
+                        <td role="gridcell">10</td>
+                        <td role="gridcell">5 (see details)</td>
+                        <td role="gridcell"><a ng-href="#/licenseFile">Licence File</a></td>
+                        <td role="gridcell">
+                            <a class="k-button k-button-icontext k-grid-edit" href="#">
+                                <span class="ion-edit"></span>Edit
+                            </a>
+                            <a class="k-button k-button-icontext k-grid-delete" href="#">
+                                <span class="ion-close"></span>Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="k-alt" data-uid="fe2397a2-9e31-4488-91e1-aa7bca6b0f93" role="row">
+                        <td role="gridcell">Chang</td>
+                        <td role="gridcell">$19.00</td>
+                        <td role="gridcell">17</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="2a69fefd-c921-4e5a-9a81-da744fe8c8b5" role="row">
+                        <td role="gridcell">Aniseed Syrup</td>
+                        <td role="gridcell">$10.00</td>
+                        <td role="gridcell">13</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="c00def99-6b10-43d8-81b9-e7b3892fc8ce" role="row">
+                        <td role="gridcell">Chef Anton's Cajun Seasoning</td>
+                        <td role="gridcell">$22.00</td>
+                        <td role="gridcell">53</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="1a774765-773b-4f72-9e70-fe06e1caf747" role="row">
+                        <td role="gridcell">Chef Anton's Gumbo Mix</td>
+                        <td role="gridcell">$21.35</td>
+                        <td role="gridcell">0</td>
+                        <td role="gridcell">true</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="0a065b1e-293b-4245-8b76-4a5415edd656" role="row">
+                        <td role="gridcell">Grandma's Boysenberry Spread</td>
+                        <td role="gridcell">$25.00</td>
+                        <td role="gridcell">120</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="76ebcabe-1dff-4bbb-bf08-c6501ffb40be" role="row">
+                        <td role="gridcell">Uncle Bob's Organic Dried Pears</td>
+                        <td role="gridcell">$30.00</td>
+                        <td role="gridcell">15</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="ce36ee68-e12f-43ff-9c36-145dc20d9106" role="row">
+                        <td role="gridcell">Northwoods Cranberry Sauce</td>
+                        <td role="gridcell">$40.00</td>
+                        <td role="gridcell">6</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="f87de81f-8886-4bbd-942e-f093ef223ee9" role="row">
+                        <td role="gridcell">Mishi Kobe Niku</td>
+                        <td role="gridcell">$97.00</td>
+                        <td role="gridcell">29</td>
+                        <td role="gridcell">true</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="3042e9cb-2572-460f-b3b4-e732e1856b99" role="row">
+                        <td role="gridcell">Ikura</td>
+                        <td role="gridcell">$31.00</td>
+                        <td role="gridcell">31</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="91ee4add-c8d0-462c-a463-163a42a18ba7" role="row">
+                        <td role="gridcell">Queso Cabrales</td>
+                        <td role="gridcell">$21.00</td>
+                        <td role="gridcell">22</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="16ea507e-71ba-45da-8dc3-f617d21d9a52" role="row">
+                        <td role="gridcell">Queso Manchego La Pastora</td>
+                        <td role="gridcell">$38.00</td>
+                        <td role="gridcell">86</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="c91215cf-1492-4b80-911d-72c6637cbf9d" role="row">
+                        <td role="gridcell">Konbu</td>
+                        <td role="gridcell">$6.00</td>
+                        <td role="gridcell">24</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="344b9022-86fb-4d15-9ff0-7da51e48bbbd" role="row">
+                        <td role="gridcell">Tofu</td>
+                        <td role="gridcell">$23.25</td>
+                        <td role="gridcell">35</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="92c2c411-678e-4fd1-a8b1-fa44d9cda1af" role="row">
+                        <td role="gridcell">Genen Shouyu</td>
+                        <td role="gridcell">$15.50</td>
+                        <td role="gridcell">39</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="27311fbd-57cd-4fff-aa83-7a6d6e2ed38d" role="row">
+                        <td role="gridcell">Pavlova</td>
+                        <td role="gridcell">$17.45</td>
+                        <td role="gridcell">29</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="37eb6f55-c47e-425e-93cf-ce0d34dd81e3" role="row">
+                        <td role="gridcell">Alice Mutton</td>
+                        <td role="gridcell">$39.00</td>
+                        <td role="gridcell">0</td>
+                        <td role="gridcell">true</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="62fd6593-ca8c-47af-8516-7e788686abbd" role="row">
+                        <td role="gridcell">Carnarvon Tigers</td>
+                        <td role="gridcell">$62.50</td>
+                        <td role="gridcell">42</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr data-uid="67a349c2-4914-44b9-9644-173a02967daa" role="row">
+                        <td role="gridcell">Teatime Chocolate Biscuits</td>
+                        <td role="gridcell">$9.20</td>
+                        <td role="gridcell">25</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                    <tr class="k-alt" data-uid="5ddc28d5-e61c-4b65-8e05-142d74554a8d" role="row">
+                        <td role="gridcell">Sir Rodney's Marmalade</td>
+                        <td role="gridcell">$81.00</td>
+                        <td role="gridcell">40</td>
+                        <td role="gridcell">false</td>
+                        <td role="gridcell"><a class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-delete"></span>Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="k-pager-wrap k-grid-pager k-widget" data-role="pager"><a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Go to the first page</span></a><a href="#" title="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Go to the previous page</span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a tabindex="-1" href="#" class="k-link" data-page="2">2</a></li>
+                <li><a tabindex="-1" href="#" class="k-link" data-page="3">3</a></li>
+                <li><a tabindex="-1" href="#" class="k-link" data-page="4">4</a></li>
+            </ul><a href="#" title="Go to the next page" class="k-link k-pager-nav" data-page="2" tabindex="-1"><span class="k-icon k-i-arrow-e">Go to the next page</span></a><a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last" data-page="4" tabindex="-1"><span class="k-icon k-i-seek-e">Go to the last page</span></a><span class="k-pager-info k-label">1 - 20 of 77 items</span></div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        var crudServiceBaseUrl = "http://demos.telerik.com/kendo-ui/service",
+            dataSource = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: crudServiceBaseUrl + "/Products",
+                        dataType: "jsonp"
+                    },
+                    update: {
+                        url: crudServiceBaseUrl + "/Products/Update",
+                        dataType: "jsonp"
+                    },
+                    destroy: {
+                        url: crudServiceBaseUrl + "/Products/Destroy",
+                        dataType: "jsonp"
+                    },
+                    create: {
+                        url: crudServiceBaseUrl + "/Products/Create",
+                        dataType: "jsonp"
+                    },
+                    parameterMap: function(options, operation) {
+                        if (operation !== "read" && options.models) {
+                            return {
+                                models: kendo.stringify(options.models)
+                            };
+                        }
+                    }
+                },
+                batch: true,
+                pageSize: 20,
+                schema: {
+                    model: {
+                        id: "ProductID",
+                        fields: {
+                            ProductID: {
+                                editable: false,
+                                nullable: true
+                            },
+                            ProductName: {
+                                validation: {
+                                    required: true
+                                }
+                            },
+                            UnitPrice: {
+                                type: "number",
+                                validation: {
+                                    required: true,
+                                    min: 1
+                                }
+                            },
+                            Discontinued: {
+                                type: "boolean"
+                            },
+                            UnitsInStock: {
+                                type: "number",
+                                validation: {
+                                    min: 0,
+                                    required: true
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            pageable: true,
+            height: 550,
+            toolbar: ["create"],
+            columns: [{
+                field: "ProductName",
+                title: "Product Name"
+            }, {
+                field: "UnitPrice",
+                title: "Unit Price",
+                format: "{0:c}",
+                width: "120px"
+            }, {
+                field: "UnitsInStock",
+                title: "Units In Stock",
+                width: "120px"
+            }, {
+                field: "Discontinued",
+                width: "120px"
+            }, {
+                command: ["edit", "destroy"],
+                title: "&nbsp;",
+                width: "250px"
+            }],
+            editable: "popup"
+        });
+    });
+    </script>
+</div>

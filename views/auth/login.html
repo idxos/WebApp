@@ -1,0 +1,57 @@
+
+  <div class="signin-page-wrapper">
+
+    <div class="container">
+      <div class="row">
+          <section class="col-lg-3"></section>
+          <section class="col-lg-6 sign-in-container">
+
+
+
+
+              <div class="sign-in-top">
+                <h1 class="section-title">
+                  <span class="mid-border-solid"><span class="bg-black">Login</span></span>
+                </h1>
+              </div>
+
+
+              <form name="loginForm" class="form-signin"  ng-submit="signIn()">
+
+                <div class="form-group">
+                  <label for="loginId">Login Id</label>
+                  <input type="text" class="form-control input-lg typeface-font" 
+                    placeholder="Login Id" id="LoginId" name="LoginId"
+                    ng-model="rimUser.LoginId" required focus>
+                </div>
+
+                <div class="form-group">
+                  <label for="loginPassword">Password</label>
+                  <input type="password" class="form-control input-lg typeface-font"
+                    placeholder="Password" id="password" name="Password" 
+                    ng-model="rimUser.Password" LoginId>
+                </div>
+
+                <button class="btn btn-block btn-lg btn-primary shake" type="submit">
+                    Sign In
+                </button>
+
+              </form>
+
+
+
+
+
+              <hr class="sign-in-hr">
+              <p class="text-center sign-in-reg-links">
+                  Don't have an account? <a href="#/registration" class="text-upper sign-up-link">Sign Up</a>
+              </p>
+
+          </section>
+          <section class="col-lg-3"></section>
+      </div>
+  </div>
+  
+</div>
+
+  <div class="bg-black" ng-include="'views/global_embeds/bottom-nav.html'"></div>      

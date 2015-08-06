@@ -1,0 +1,23 @@
+  <h4>Show notification:</h4>
+        <p>
+            <button class="k-button" ng-click="notf1.show('This is a notice', 'error')">Popup bottom-right</button><br />
+            <button class="k-button" ng-click="showInContainer()">Show in container</button><br />
+            <button class="k-button" ng-click="dismissAll()">Dismiss all</button>
+        </p>
+        <span kendo-notification="notf1"></span>
+        <span kendo-notification="notf2" k-append-to="'#container'"></span>
+
+    </div>
+
+    <div id="container" class="demo-section k-header"></div>
+
+    <style>
+        .demo-section {
+            text-align: center;
+            line-height: 4em;
+        }
+        .demo-section .k-button {
+            width: 250px;
+        }
+    </style>
+

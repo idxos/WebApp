@@ -1,0 +1,26 @@
+{
+        "id": "item1",
+        "upc": null,
+        "manufacturer_number": "03-1331B",
+        "list_price": "92.95",
+        "standard_dealer_price": "42.61",
+        "estimated_weight": "5.0445",
+        "substitute_part": null,
+        "superceded_part": null,
+        "catalog_description": null,
+        "description": "SPRINGS BLACK 70\\/130",
+        "image": "003-1300B.jpg",
+        "video": null,
+        "has_fitment": "true",
+        "has_map_policy": "false",
+        "country_of_origin_code": "US",
+        "country_of_origin": "United States of America",
+        "create_date": "2014-09-08 08:50:40",
+        "last_update_date": "2015-04-04 03:12:32",
+        "vendor_id": "PROGRESSIVE",
+        "_links": {
+          "self": {
+            "href": "http:\\/\\/api.wpswebservices.com\\/item\\/003-1331B"
+          }
+        }
+      }
